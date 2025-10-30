@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# <img src="app/favicon.ico" width="25"> Global Curiosity
 
-## Getting Started
+## Developer Info:
+| Name | Email | Date Started | 
+| ---- | ----- | ------------ |
+| Erwin Medina | erwin.l.medina@gmail.com | 10/29/25
 
-First, run the development server:
+## Demonstration:
+- Live demo of the project still in the works!
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Application Purpose:
+Reading the news can be exhausting, confusing, maybe there's too much information getting thrown at you. Or perhaps, you aren't familiar with where some of the events are occurring or why they're happening in the first place. The objective of this project is to contextualize the information so that it's easier to read and understand, creating a broader and in-depth of the events occurring and why.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Example:
+- You read in the news, "Tensions rise between Venezuela and Guyana over border issue".
+- This project would ideally respond with:
+    - A map highlighting both countries.
+    - A short, AI-generated explainer on thei history of the border issues.
+    - The latest timeline of related stories.
+    - Possibly even recommend 'nearby' headlines, such as "Oil exploration in Trinidad".
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology:
+### Frontend:
+- Next.js
+- Tailwind
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Backend:
+- Node.js + Express
+- NewsAPI
+- Open-Source Transformer Model for Summarization [HuggingFace?]
+- Additional APIs for context data.
 
-## Learn More
+## Current Stage:
+- Fetch different categories using the NewsAPI. 
+- Clean up the MVP layout. Clean home feed, filter buttons, cards open to a new page (maybe?)
 
-To learn more about Next.js, take a look at the following resources:
+## Next Steps:
+- Use REST Countries API to fetch flag, population, map coordinates.
+- Add contextual info, like adding a map [Leaflet]
+- Auto summarization using HuggingFace, bart-large-cnn
+- Maybe implement caching of some sort.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Images
+_Please be patient. Images to come!_
