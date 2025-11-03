@@ -10,6 +10,21 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-sriracha);
+}
+
+@theme {
+  --gradient-navbar-vertical: linear-gradient(180deg, rgba(44,104,130,1) 0%, rgba(0,0,0,1) 50%, rgba(8,8,8,1) 97%);
+  --gradient-navbar-horizontal: linear-gradient(90deg, rgba(44,104,130,1) 0%, rgba(0,0,0,1) 50%, rgba(8,8,8,1) 97%);
+}
+
+@layer utilities {
+  .bg-navbar-vertical {
+    background: var(--gradient-navbar-vertical);
+  }
+  .bg-navbar-horizontal {
+    background: var(--gradient-navbar-horizontal);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
